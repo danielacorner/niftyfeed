@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+
+.App {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  list-style-type: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+}
+
+.slider {
+  position: relative;
+  height: 80vh;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+/* .slide h1, .slide h2 {
+  color: #fff;
+  text-shadow: 2px 2px 1px #000;
+}
+
+.slide.selected {
+  opacity: 1;
+  transition-duration: .2s;
+} */
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.modalClass {
+  text-align: center;
+  margin-top: 100;
+}
+
+li {
+  list-style-type: none;
+}
+.RegistrationBtn {
+  margin: 0px 30px 25px 40px
+}
+
+.demo-header {
+  margin-left: 100px;
+}
+
+.Demo {
+  display: flex;
+  margin: 0px 0px 20px 395px;
+  position: relative;
+}
+
+.Demo-Background {
+  background-color: black;
+}
+
+.Btn-Home {
+  color: white;
+  margin-left: -350px;
+  margin-bottom: -160px;
+}
+
+.Btn-demo {
+  margin: 50px 0px 0px -725px;
+}
+
+.Home {
+  position:fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+}
+
+.Logo {
+  width: 25%;
+  margin: 0px 3200px -50px 0px;
+}
+
+.Heading {
+  color: rgb(250, 249, 245);
+  text-align: center;
+}
+
+.Heading-Text {
+  margin: -150px 0px 0px -700px
+}
+
+.About {
+  text-align: center;
+  width: 50%;
+  margin: 0px 0px 0px 400px
+}
+
+.Nav-Item {
+  text-align: center;
+  margin-right: 400px;
+  justify-content: space-between;
+}
+
+.Nav-Home {
+  margin-left: 200px;
+}
+
+.Nav-About {
+  margin-right: -100px;
+}
+
+.Nav-Contact {
+  margin-left: 100px;
+}
+
+.login {
+  margin-left: -50px;
+}
+
+.Dashboard {
+  background-color: rgb(250, 249, 245);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.Dashboard-Title {
+  color: #00c3cc;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+  margin-right: 250px;
+  height: 80%;
+  width: 80%;
+}
+
+.topbar {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(250, 249, 245);
+}
+
+.topbarWrapper {
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topRight {
+  display: flex;
+  align-items: center;
+  margin-left: 1000px;
+}
+
+.topBarIconContainer {
+  position: relative;
+  margin-left: 10px;
+}
+
+.topIconBadge {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  margin: -32px 20px 0px 10px;
+  background-color: red;
+  color: white;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.Dashboard-Header {
+  margin-left: 90px;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  height: calc(140vh);
+  width: 60px;
+  background-color: #5dfff7f5;
+  border-top-right-radius: 32px;
+  position: sticky;
+  margin-left: -112px
+}
+
+.others {
+  flex: 4;
+}
+
+.sidebar-icon {
+  margin: 25px -17px;
+  transform: scale(1.6);
+  color: white;
+}
+
+.inventory-icon {
+  margin: 25px -10px 0px -25px;
+  transform: scale(1.6);
+  color: white;
+}
+
+.statistics-icon {
+  margin: 50px -10px 0px -25px;
+  transform: scale(1.6);
+  color: white;
+}
+
+.widgets-icon {
+  margin: 50px -10px 0px -25px;
+  transform: scale(1.6);
+  color: white;
+}
+
+.meetingroom-icon {
+  transform: scale(1.6);
+  color: white;
+  margin: 40px 0px 0px -20px
+}
+
+.menu-icon {
+  margin-bottom: -45px;
+  border-radius: 90px;
+  cursor: pointer;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  border: none;
+  vertical-align: middle; */
+  transition: box-shadow 0.4s ease;
+}
+
+.exit-icon {
+  margin-top: 640px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.search-icon {
+  margin-left: 10px;
+}
+
+.searchbar {
+  margin: 30px 0px 0px 540px;
+  color: #047fd3;
+}
+
+.dashboard-card1 {
+  width: 200px;
+  height: 200px;
+  margin: 150px 0px 0px 100px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dashboard-cardtext {
+  text-align: center;
+  width: 250px;
+}
+
+.inventory {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.dashboard-card2 {
+  width: 200px;
+  height: 200px;
+  margin: -200px 0px 0px 450px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.dashboard-card3 {
+  width: 200px;
+  height: 200px;
+  margin: -200px 0px 0px 800px;
+  justify-content: space-evenly;
+}
+
+.nft-button {
+  margin-top: 10px;
+  padding: 10px 24px;
+  border-radius: 12px;
+  background-color: #707070;
+}
+
+.add-icon {
+  transform: scale(2.0);
+  margin: 0px 160px -140px
+}
+
+.profile-shape {
+  width: 150px;
+  height: 150px;
+  margin: -60px 0px 0px 1000px;
+  background: rgba(0,0,0,.3) ;
+  border: solid black;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.person-icon {
+  transform: scale(5.5);
+  margin: 65px 0px 0px 60px;
+}
+
+.profile-text {
+  margin: 10px 0px 0px 635px;
+  text-align: center;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.favorites-icon {
+  color: red;
+}
+
+hr {
+  width: 110%;
+}
+
+.line {
+  margin-top: 60px;
+}
+
+.nft-price {
+  color: #00c3cc;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 235px;
+  margin-bottom: -2px;
+}
+
+.eth-conversion {
+  margin-left: 240px;
+  margin-bottom: -10px;
+}
+
+.conversion-button {
+  margin: 20px 0px 0px 230px;
+}
+
+.nftgraph {
+  margin: -490px 0px 0px -740px
+}
+
+.dashboard-analysis {
+ background: rgba(0,0,0,.3) ;
+ width: 350px;
+ height: 500px;
+ margin: -1140px 0px 0px 750px;
+ border: solid black;
+ border-width: 10px;
+ background-color: white;
+ text-align: center;
+ border-radius: 30px;
+}
+
+.analysis-text {
+  font-weight: 750;
+  font-size: 40px;
+  color:#4f81bd;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.analysis-data {
+  margin-top: 20px;
+}
+
+.analysis-subheading {
+  font-weight: 600;
+}
+
+.Tooltip {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Tooltip:hover {
+  margin-top: -100px;
+}
+
+.menu-container {
+  margin-left: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-trigger {
+  border-radius: 90px;
+  cursor: pointer;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  padding: 4px 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border: none;
+  vertical-align: middle;
+  transition: box-shadow 0.4s ease;
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-trigger span {
+  font-weight: 700;
+  vertical-align: middle;
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.menu-trigger img {
+  border-radius: 90px;
+}
+
+.menu {
+  background: #ffffff;
+  border-radius: 8px;
+  position: relative;
+  top: 72px;
+  right: 0;
+  left: 20px;
+  width: 300px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  border-bottom: 1px solid #dddddd;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333333;
+  padding: 15px 20px;
+  display: block;
+}
+
+.input-username {
+  margin-left: 10px;
+  width:250px;
+}
+
+.input-password {
+  margin-left: 15px;
+  margin-top: 20px;
+  width: 250px;
+}
+
+.input-email {
+  margin-left: 42px;
+  margin-bottom: 20px;
+}
+
+.input-name {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.submit {
+  margin: 20px 10px 0px 0px
+}
+
+.form-name {
+  margin-right: 5px;
+  text-align: center;
+}
+
+.registration {
+  text-align: center;
+  margin: 0px 200px 300px 0px
+}
+
+.new-account {
+  text-align: center;
+}
+
+.form-group {
+  text-align: center;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
+
+.logreg-footnote {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.login-header {
+  text-align: center;
+  color: #00c3cc;
+}
+
+.login-card {
+  width: 25%;
+  margin: -250px 0px 0px 850px
+}
+
+.logreg-div {
+  margin-top: 30px;
+}
+
+.x-button {
+  margin-left: 450px;
+}
+
+.registration-form {
+  min-height: 0px;
+  background-color:cornflowerblue;
+  background-size: cover;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wizardbutton {
+  margin-top: 6px;
+  background-color: rgb(255, 182, 113);
+  color: white;
+  border-radius: 0.25rem; 
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2px;
+  padding-bottom: 1.5rem; 
+  width: 100%;
+}
+
+.wizardbutton:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.wizard-form {
+  max-width: 36rem;
+  width: 100%;
+  margin-left: 500px;
+  margin-top: 80px;
+  border-radius: .5rem;
+  box-shadow: 50px 50px -12px rgb(0 0 0/0.25); 
+  background-color: white;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.wizard-heading {
+  color: white;
+  font-weight: 640;
+  text-align: center;
+  margin-left: 530px;
+}
+
+.wizard-subheading {
+  text-align: center;
+}
+
+.wizard-username {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.wizard-div {
+  margin-top: 20px;
+}
+
+.date {
+  width: 150px;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.personicon {
+  transform: scale(5.0);
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.nft-container {
+  display: grid;
+  grid-gap: 5%;
+  margin: 5%;
+  margin-top: 0%;
+  grid-template-columns: repeat(auto-fill, 21.05%);
+}
+
+.nft-card {
+  width: 35%;
+  box-shadow: 0 4px 8px 0 black;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.nft-card:hover {
+  background-color: whitesmoke;
+  box-shadow: 0 8px 16px 0 black;
+  transform: scale(1.05);
+}
+
+.nft-image {
+  border-radius: 5px 5px 0 0;
+  width: 50%;
+}
+
+.login-container {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login-div {
+  width: 100;
+  max-width: 400px;
+}
+
+.home-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+@import url("https://cdn.syncfusion.com/ej2/material.css");
